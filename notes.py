@@ -14,7 +14,6 @@ def save_notes(notes):
     with open(NOTES_FILE, "w") as f:
         json.dump(notes, f, indent=4)
 
-# Инициализация заметок
 notes = load_notes()
 
 def get_user_notes(user_id):
